@@ -1,0 +1,28 @@
+<mat-card>
+    <mat-card-title>Cadastro de Brinquedos</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome"
+                [(ngModel)]="payment.nome" name="nome">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Quantidade"
+                [(ngModel)]="payment.quantidade" name="numero">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Marca"
+              [(ngModel)]="payment.marca" name="validade">
+      </mat-form-field>
+      <mat-form-field>
+          <input matInput placeholder="Código"
+              [(ngModel)]="payment.codigo" name="codigo">
+      </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="createPayment()" color="primary">
+        Cadastar
+    </button>
+    
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+  </mat-card>
